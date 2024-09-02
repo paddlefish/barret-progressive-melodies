@@ -4,17 +4,53 @@
 \include "first_part.ily"
 \include "second_part.ily"
 
-\score {
-    \new StaffGroup <<
-        \new Staff = "oboe" <<
-            \firstSettings
-            \firstPart
+\bookpart {
+
+    \header {
+
+        % dedication = "Dedication"
+        title = "Progressive Melody no 38"
+        % subtitle = "From Oboe Method"
+        % subsubtitle = "Subsubtitle"
+        composer = "A.M.R. Barret"
+        % arranger = "Andrew Rahn"
+        % poet = "poet"
+        % opus = "opus 1"
+
+        % piece = "piece"
+
+        % The following fields are evenly spread on one line;
+        % the field "instrument" also appears on following pages
+        % instrument = "Oboe and French horn"
+
+        % The following fields are placed at opposite ends
+        %of the same line
+        % meter = "Meter"
+
+        % The following fields are centered at the bottom
+        % tagline = "The tagline goes at the bottom of the last page"
+        % copyright = "Public Domain"
+
+    }
+
+    \score {
+        \header {
+            piece = ""
+            % opus = "opus 1"
+        }
+        \new StaffGroup <<
+            \new Staff = "oboe" <<
+                \firstSettings
+                \firstPart
+            >>
+            \new Staff = "piano" <<
+                \secondSettings
+                \secondPart
+            >>
         >>
-        \new Staff = "piano" <<
-            \secondSettings
-            \secondPart
-        >>
-    >>
-    \midi {}
-    \layout {}
+        \midi {}
+        \layout {
+            indent = 0\in
+        }
+    }
 }
