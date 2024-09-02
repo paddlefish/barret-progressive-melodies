@@ -1,21 +1,19 @@
 \version "2.24.4"
 
 \header {
-    encodingsoftware =  "MuseScore 4.3.2"
     encodingdate =  "2024-08-25"
-    poet =  Oboe
-    }
+}
 
 \paper {
     
-    paper-width = 21.59\cm
-    paper-height = 27.94\cm
-    top-margin = 1.5\cm
-    bottom-margin = 1.5\cm
-    left-margin = 1.5\cm
-    right-margin = 1.5\cm
-    indent = 1.6607692307692306\cm
-    short-indent = 1.245576923076923\cm
+    paper-width = 8.5\in
+    paper-height = 11\in
+    top-margin = 0.375\in
+    bottom-margin = 0.375\in
+    left-margin = 0.5\in
+    right-margin = 0.5\in
+    indent = 0.75\in
+    short-indent = 0\in
     }
 \layout {
     \context { \Score

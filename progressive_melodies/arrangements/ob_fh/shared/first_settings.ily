@@ -15,4 +15,6 @@ firstSettings =
   \transposition c'
   \clef "treble"
   \set Staff.midiInstrument = "oboe"
+  \set Staff.instrumentName = "Oboe"
+  % \set Staff.shortInstrumentName = "Ob."
 }
