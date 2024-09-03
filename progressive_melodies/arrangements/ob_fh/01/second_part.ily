@@ -29,5 +29,3 @@ secondPart = \relative e {
     f2 g4 g, % 23
     c4 g c,2 % 23
 }
-
-\transpose c c \secondPart

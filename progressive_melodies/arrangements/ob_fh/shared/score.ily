@@ -18,5 +18,5 @@
 \layout {
     \context { \Score
         autoBeaming = ##f
-        }
     }
+}

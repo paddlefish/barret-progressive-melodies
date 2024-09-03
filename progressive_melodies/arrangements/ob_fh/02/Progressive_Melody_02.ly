@@ -4,12 +4,13 @@
 \include "first_part.ily"
 \include "second_part.ily"
 
+transpositionForFlats = ees
 \bookpart {
 
     \header {
 
         % dedication = "Dedication"
-        title = "Progressive Melody no 38"
+        title = "Progressive Melody no 2"
         % subtitle = "From Oboe Method"
         % subsubtitle = "Subsubtitle"
         composer = "A.M.R. Barret"
@@ -41,11 +42,11 @@
         \new StaffGroup <<
             \new Staff = "oboe" <<
                 \firstSettings
-                \transpose c ces \firstPart
+                \transpose c \transpositionForFlats \firstPart
             >>
             \new Staff = "french horn" <<
                 \secondSettings
-                \transpose f ces' \secondPart
+                \transpose f, \transpositionForFlats \secondPart
             >>
         >>
         \midi {}
@@ -58,7 +59,7 @@
 \bookpart {
 
     \header {
-        title = "Progressive Melody no 38"
+        title = "Progressive Melody no 2"
         composer = "A.M.R. Barret"
     }
 
@@ -70,30 +71,7 @@
             \firstSettings
             \set Staff.instrumentName = ""
 
-            \transpose c ces \firstPart
-        >>
-        \layout {
-            indent = 0\in
-        }
-    }
-}
-
-\bookpart {
-
-    \header {
-        title = "Progressive Melody no 38"
-        composer = "A.M.R. Barret"
-    }
-
-    \score {
-        \header {
-            piece = "French horn"
-        }
-        \new Staff = "french horn" <<
-            \secondSettings
-            \set Staff.instrumentName = ""
-
-            \transpose f ces' \secondPart
+            \transpose c \transpositionForFlats \firstPart
         >>
         \layout {
             indent = 0\in
