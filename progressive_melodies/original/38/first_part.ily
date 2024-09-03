@@ -21,7 +21,7 @@ firstPart = \relative e' {
     b2 (  a4 ) cis8. ( [ d16 ) ] | % 12
     \mark \markup { \box { C } }
     e2 \> ~ e8 ( [ fis8 e8 \! d8 ) ] | % 13
-    cis8. ( [ b16 ]  a4. ) r8  a8. ( [ b16 ) ] | % 14
+    cis8. ( [ b16 ]  a4 ~ a8 ) r8  a8. ( [ b16 ) ] | % 14
     cis2 \> ~ cis8 ( [ d8 cis8 \! b8 ) ] | % 15
      a8. ( [  gis16 ) ]  fis4 r8 a'8 \> ( [ eis8 fis8 ] \! | % 16
     \mark \markup { \box { D } }
